@@ -10,7 +10,7 @@ app = Flask(__name__)
 #    app.run(debug = True)
 
 #creating an array of tasks with each task as a different object in it
-tasks = [
+contacts = [
     {
         'id':1,
         'name': u'jay', 
@@ -57,7 +57,7 @@ def add_task():
 
 def get_task():
     return jsonify({
-        'data':tasks
+        'data':contacts
     })
 
 if(__name__ == "__main__"):
